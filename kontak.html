@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak & Pendaftaran | KidsPlay Sports Club</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Success Modal -->
+  <div class="modal-backdrop" id="success-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="modal-title">Pendaftaran Berhasil! 🎉</h3>
+        <button class="modal-close" onclick="closeModal('success-modal')" aria-label="Tutup modal">✕</button>
+      </div>
+      <div style="text-align:center; padding: 16px 0;">
+        <div style="font-size:80px; margin-bottom:16px;">🏅</div>
+        <p style="font-size:16px; color:var(--on-surface-variant); line-height:1.7;">
+          Selamat! Anak Anda telah berhasil didaftarkan ke <strong>KidsPlay Sports Club</strong>.<br><br>
+          Tim kami akan menghubungi Anda dalam <strong>1–2 hari kerja</strong> untuk konfirmasi jadwal sesi pertama.
+        </p>
+      </div>
+      <button class="btn btn-primary" style="width:100%; margin-top:16px;" onclick="closeModal('success-modal')">
+        Kembali ke Halaman
+      </button>
+    </div>
+  </div>
+
+  <header>
+    <nav aria-label="Navigasi Utama">
+      <a href="index.html" class="nav-logo">Kids<span>Play</span> ⚡</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="program.html">Program Olahraga</a></li>
+        <li><a href="jadwal.html">Jadwal Latihan</a></li>
+        <li><a href="galeri.html">Galeri Kegiatan</a></li>
+        <li><a href="kontak.html" class="active">Kontak</a></li>
+      </ul>
+      <a href="kontak.html" class="btn btn-primary nav-btn-header">Daftar Sekarang</a>
+      <button class="nav-hamburger" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <nav class="nav-mobile" aria-label="Navigasi Mobile">
+      <a href="index.html">🏠 Beranda</a>
+      <a href="program.html">🏅 Program Olahraga</a>
+      <a href="jadwal.html">📅 Jadwal Latihan</a>
+      <a href="galeri.html">📸 Galeri Kegiatan</a>
+      <a href="kontak.html">📞 Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section" aria-labelledby="contact-title">
+      <div class="container">
+
+        <div class="section-header" style="margin-bottom: var(--space-lg);">
+          <span class="tag">Daftar Sekarang</span>
+          <h1 id="contact-title" class="text-headline-xl" style="color:var(--on-background); margin-bottom:12px;">Gabung Tim Kami</h1>
+          <p>Siap memulai perjalanan atletik anak Anda? Isi formulir pendaftaran di bawah ini dan kami akan segera menghubungi Anda.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact Info (Left) -->
+          <aside aria-label="Informasi kontak">
+            <h2 style="font-size:24px; margin-bottom:var(--space-md);">Informasi Kontak</h2>
+            <p>Hubungi kami melalui berbagai saluran berikut. Staf kami siap membantu setiap hari Senin–Sabtu, pukul 07.00–19.00 WIB.</p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <span class="icon">📍</span>
+                <div>
+                  <strong>Alamat</strong>
+                  <span>Jl. Olahraga No.12, Menteng, Jakarta Pusat 10310</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="icon">📞</span>
+                <div>
+                  <strong>Telepon / WhatsApp</strong>
+                  <span>(021) 1234-5678 · 0812-3456-7890</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="icon">✉️</span>
+                <div>
+                  <strong>Email</strong>
+                  <span>info@kidsplay.id</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="icon">🕐</span>
+                <div>
+                  <strong>Jam Operasional</strong>
+                  <span>Senin – Sabtu: 07.00 – 19.00 WIB</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Program tersedia -->
+            <div style="margin-top: var(--space-md); background: var(--primary-fixed); border-radius: var(--radius-lg); padding: var(--space-md);">
+              <h3 style="font-size:16px; font-weight:600; margin-bottom:12px; color:var(--primary);">🏅 Program Tersedia</h3>
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; font-size:14px;">
+                  <span>⚽ Sepak Bola</span><span style="color:var(--primary); font-weight:600;">Usia 6–17</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center; font-size:14px;">
+                  <span>🏀 Bola Basket</span><span style="color:var(--primary); font-weight:600;">Usia 8–17</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center; font-size:14px;">
+                  <span>🎾 Tenis</span><span style="color:var(--primary); font-weight:600;">Usia 6–17</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center; font-size:14px;">
+                  <span>🏊 Renang</span><span style="color:var(--primary); font-weight:600;">Usia 4–17</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Registration Form (Right) -->
+          <div>
+            <div class="form-card">
+              <h3>📝 Formulir Pendaftaran</h3>
+
+              <!-- Progress Bar -->
+              <div style="margin-bottom:20px;">
+                <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--on-surface-variant); margin-bottom:6px;">
+                  <span>Kelengkapan formulir</span>
+                  <span id="progress-label">0%</span>
+                </div>
+                <div class="progress-step" style="height:8px; flex:1;">
+                  <div class="fill progress-fill" id="form-progress-bar"></div>
+                </div>
+              </div>
+
+              <!-- Form -->
+              <form id="registration-form" novalidate aria-label="Formulir pendaftaran anggota baru">
+
+                <!-- Orang Tua -->
+                <fieldset style="border:none; margin-bottom:var(--space-md);">
+                  <legend style="font-family:var(--font-headline); font-size:15px; font-weight:600; color:var(--primary); margin-bottom:var(--space-sm); display:block; padding:0;">
+                    👨‍👩‍👧 Data Orang Tua / Wali
+                  </legend>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="parent_name">Nama Lengkap <span class="req">*</span></label>
+                      <input
+                        type="text"
+                        id="parent_name"
+                        name="parent_name"
+                        placeholder="Nama orang tua/wali"
+                        required
+                        autocomplete="name"
+                      />
+                      <span class="form-error-msg"></span>
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">No. HP / WhatsApp <span class="req">*</span></label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="0812-3456-7890"
+                        required
+                        autocomplete="tel"
+                      />
+                      <span class="form-error-msg"></span>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Alamat Email <span class="req">*</span></label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="nama@email.com"
+                      required
+                      autocomplete="email"
+                    />
+                    <span class="form-error-msg"></span>
+                  </div>
+                </fieldset>
+
+                <!-- Data Anak -->
+                <fieldset style="border:none; margin-bottom:var(--space-md);">
+                  <legend style="font-family:var(--font-headline); font-size:15px; font-weight:600; color:var(--primary); margin-bottom:var(--space-sm); display:block; padding:0;">
+                    👦 Data Anak
+                  </legend>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="child_name">Nama Anak <span class="req">*</span></label>
+                      <input
+                        type="text"
+                        id="child_name"
+                        name="child_name"
+                        placeholder="Nama lengkap anak"
+                        required
+                      />
+                      <span class="form-error-msg"></span>
+                    </div>
+                    <div class="form-group">
+                      <label for="child_age">Usia Anak <span class="req">*</span></label>
+                      <input
+                        type="number"
+                        id="child_age"
+                        name="child_age"
+                        placeholder="Contoh: 8"
+                        min="4" max="17"
+                        required
+                      />
+                      <span class="form-error-msg"></span>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="program">Program yang Dipilih <span class="req">*</span></label>
+                      <select id="program" name="program" required>
+                        <option value="">— Pilih program —</option>
+                        <option value="football">⚽ Football Academy (6–17 thn)</option>
+                        <option value="basketball">🏀 Basketball Stars (8–17 thn)</option>
+                        <option value="tennis">🎾 Tennis Champions (6–17 thn)</option>
+                        <option value="swim">🏊 Swim & Dive (4–17 thn)</option>
+                      </select>
+                      <span class="form-error-msg"></span>
+                    </div>
+                    <div class="form-group">
+                      <label for="schedule_pref">Preferensi Jadwal <span class="req">*</span></label>
+                      <select id="schedule_pref" name="schedule_pref" required>
+                        <option value="">— Pilih waktu —</option>
+                        <option value="pagi">🌅 Pagi (07.00–10.00)</option>
+                        <option value="siang">☀️ Siang (10.00–14.00)</option>
+                        <option value="sore">🌇 Sore (15.00–19.00)</option>
+                        <option value="fleksibel">🔄 Fleksibel</option>
+                      </select>
+                      <span class="form-error-msg"></span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <!-- Catatan -->
+                <div class="form-group">
+                  <label for="notes">Catatan / Pertanyaan Tambahan</label>
+                  <textarea
+                    id="notes"
+                    name="notes"
+                    placeholder="Kondisi kesehatan khusus, pertanyaan tentang program, atau informasi lain yang perlu kami ketahui..."
+                  ></textarea>
+                </div>
+
+                <!-- Persetujuan -->
+                <div class="form-group" style="display:flex; align-items:flex-start; gap:10px;">
+                  <input
+                    type="checkbox"
+                    id="agree"
+                    name="agree"
+                    style="width:auto; margin-top:3px; accent-color:var(--primary);"
+                    required
+                  />
+                  <label for="agree" style="font-size:13px; color:var(--on-surface-variant); font-family:var(--font-body); font-weight:400; cursor:pointer; margin-bottom:0;">
+                    Saya menyetujui <a href="#" style="color:var(--primary);">syarat & ketentuan</a> dan
+                    <a href="#" style="color:var(--primary);">kebijakan privasi</a> KidsPlay Sports Club.
+                    Data yang diberikan akan digunakan hanya untuk keperluan pendaftaran. <span class="req">*</span>
+                  </label>
+                </div>
+                <span class="form-error-msg" id="agree-error" style="margin-top:-12px; display:block;"></span>
+
+                <!-- Submit -->
+                <button type="submit" class="btn btn-primary" style="width:100%; margin-top:var(--space-sm); font-size:17px; padding:16px;">
+                  🚀 Kirim Pendaftaran
+                </button>
+
+                <p style="font-size:12px; color:var(--outline); text-align:center; margin-top:12px;">
+                  🔒 Data Anda aman. Kami tidak pernah menjual atau membagikan informasi pribadi.
+                </p>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">Kids<span>Play</span> Sports Club</div>
+          <p>Membentuk generasi atlet muda yang berkarakter dan berprestasi.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Program</h4>
+          <ul>
+            <li><a href="program.html">Football Academy</a></li>
+            <li><a href="program.html">Basketball Stars</a></li>
+            <li><a href="program.html">Tennis Champions</a></li>
+            <li><a href="program.html">Swim & Dive</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="jadwal.html">Jadwal Latihan</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul>
+            <li><a href="#">📍 Jl. Olahraga No.12, Jakarta</a></li>
+            <li><a href="tel:02112345678">📞 (021) 1234-5678</a></li>
+            <li><a href="mailto:info@kidsplay.id">✉️ info@kidsplay.id</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Dibuat Oleh Aan arip suryana |NIM:24131417079</span>
+        <span><a href="#">Kebijakan Privasi</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Progress bar update — sinkronkan label persentase
+    const progressBar = document.getElementById('form-progress-bar');
+    const progressLabel = document.getElementById('progress-label');
+    if (progressBar) {
+      const observer = new MutationObserver(() => {
+        const width = progressBar.style.width || '0%';
+        if (progressLabel) progressLabel.textContent = width;
+      });
+      observer.observe(progressBar, { attributes: true, attributeFilter: ['style'] });
+    }
+
+    // Validasi checkbox persetujuan
+    const form = document.getElementById('registration-form');
+    const agreeCheckbox = document.getElementById('agree');
+    const agreeError = document.getElementById('agree-error');
+    if (form && agreeCheckbox) {
+      form.addEventListener('submit', (e) => {
+        if (!agreeCheckbox.checked) {
+          agreeError.textContent = 'Anda harus menyetujui syarat & ketentuan untuk melanjutkan.';
+          agreeError.classList.add('visible');
+          e.stopImmediatePropagation();
+        } else {
+          agreeError.classList.remove('visible');
+        }
+      }, true); // capture phase
+    }
+  </script>
+</body>
+</html>

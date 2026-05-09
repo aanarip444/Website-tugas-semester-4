@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KidsPlay By Aan ARIP Suryana</title>
+  <meta name="description" content="KidsPlay Sports Club — tempat terbaik untuk anak mengembangkan bakat olahraga. Sepak Bola, Basket, Tenis, Renang untuk usia 4-17 tahun." />
+  <link rel="stylesheet" href="style.css" />
+   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Aan arip surya - NIM 2431417079" />
+  <title>KidsPlay Sports Club — Aan Arip Suryana | 243147079</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======================================================
+       TOAST CONTAINER
+  ====================================================== -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- ======================================================
+       HEADER & NAVIGASI 
+  ====================================================== -->
+  <header>
+    <nav aria-label="Navigasi Utama">
+      <a href="index.html" class="nav-logo">Kids<span>Play</span> ⚡</a>
+
+      <!-- Desktop nav links -->
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="active">Beranda</a></li>
+        <li><a href="program.html">Program Olahraga</a></li>
+        <li><a href="jadwal.html">Jadwal Latihan</a></li>
+        <li><a href="galeri.html">Galeri Kegiatan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+
+      <a href="kontak.html" class="btn btn-primary nav-btn-header">Daftar Sekarang</a>
+
+      <!-- Mobile hamburger -->
+      <button class="nav-hamburger" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Nav Drawer -->
+    <nav class="nav-mobile" aria-label="Navigasi Mobile">
+      <a href="index.html">🏠 Beranda</a>
+      <a href="program.html">🏅 Program Olahraga</a>
+      <a href="jadwal.html">📅 Jadwal Latihan</a>
+      <a href="galeri.html">📸 Galeri Kegiatan</a>
+      <a href="kontak.html">📞 Kontak</a>
+      <a href="kontak.html" class="btn btn-primary" style="margin-top:8px; text-align:center;">Daftar Sekarang</a>
+    </nav>
+  </header>
+
+  <!-- ======================================================
+       MAIN CONTENT
+  ====================================================== -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Hero Text (Left) -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="dot"></span>
+              Pendaftaran Musim Baru Dibuka!
+            </div>
+
+            <h1 class="hero-title" id="hero-title">
+              Membentuk<br>
+              <span class="accent">Juara</span><br>
+              Masa Depan
+            </h1>
+
+            <p class="hero-desc">
+              Program olahraga terpadu untuk anak usia 4–17 tahun. Dipandu pelatih berpengalaman dengan pendekatan yang menyenangkan, aman, dan penuh semangat.
+            </p>
+
+            <div class="hero-actions">
+              <a href="kontak.html" class="btn btn-primary">🚀 Daftar Sekarang</a>
+              <a href="program.html" class="btn btn-secondary">Lihat Program</a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Anggota Aktif</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Cabang Olahraga</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Pelatih Ahli</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Tahun Berpengalaman</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual (Right) -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-card-grid">
+              <article class="sport-card featured">
+                <span class="emoji">⚽</span>
+                <div>
+                  <div class="label">Sepak Bola Junior</div>
+                  <div class="sublabel">Usia 6–17 · Lapangan A & B</div>
+                </div>
+              </article>
+              <article class="sport-card">
+                <span class="emoji">🏀</span>
+                <div class="label">Bola Basket</div>
+                <div class="sublabel">Usia 8–17</div>
+              </article>
+              <article class="sport-card">
+                <span class="emoji">🎾</span>
+                <div class="label">Tenis</div>
+                <div class="sublabel">Usia 6–17</div>
+              </article>
+              <article class="sport-card">
+                <span class="emoji">🏊</span>
+                <div class="label">Renang</div>
+                <div class="sublabel">Usia 4–17</div>
+              </article>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM SECTION -->
+    <section class="programs-section" aria-labelledby="programs-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Program Kami</span>
+          <h2 id="programs-title">Pilih Olahraga Favorit</h2>
+          <p>Setiap program dirancang untuk membangun karakter, kedisiplinan, dan semangat juang anak Anda.</p>
+        </div>
+
+        <div class="programs-grid">
+
+          <article class="program-card">
+            <div class="program-card-img-placeholder" style="background: linear-gradient(135deg, #c2e8ff, #75d1ff);">⚽</div>
+            <div class="program-card-body">
+              <span class="program-card-chip chip-soccer">Sepak Bola</span>
+              <h3>Football Academy</h3>
+              <p>Teknik dasar hingga strategi permainan tim. Latihan intensif 3x seminggu dengan pelatih bersertifikat FIFA.</p>
+              <div class="program-card-footer">
+                <span class="program-age">👦 Usia 6–17 Tahun</span>
+                <button class="btn btn-primary btn-sm btn-enroll" data-program="Football Academy">Daftar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="program-card">
+            <div class="program-card-img-placeholder" style="background: linear-gradient(135deg, #ffdbc8, #ffb68b);">🏀</div>
+            <div class="program-card-body">
+              <span class="program-card-chip chip-basket">Basket</span>
+              <h3>Basketball Stars</h3>
+              <p>Dribbling, shooting, dan kerja sama tim. Program yang meningkatkan koordinasi dan kepercayaan diri anak.</p>
+              <div class="program-card-footer">
+                <span class="program-age">👦 Usia 8–17 Tahun</span>
+                <button class="btn btn-primary btn-sm btn-enroll" data-program="Basketball Stars">Daftar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="program-card">
+            <div class="program-card-img-placeholder" style="background: linear-gradient(135deg, #dae1ff, #b3c5ff);">🎾</div>
+            <div class="program-card-body">
+              <span class="program-card-chip chip-tennis">Tenis</span>
+              <h3>Tennis Champions</h3>
+              <p>Teknik serve, volley, dan footwork dalam suasana latihan yang menyenangkan dan penuh energi.</p>
+              <div class="program-card-footer">
+                <span class="program-age">👧 Usia 6–17 Tahun</span>
+                <button class="btn btn-primary btn-sm btn-enroll" data-program="Tennis Champions">Daftar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="program-card">
+            <div class="program-card-img-placeholder" style="background: linear-gradient(135deg, #e0f2fe, #b3e0ff);">🏊</div>
+            <div class="program-card-body">
+              <span class="program-card-chip chip-swim">Renang</span>
+              <h3>Swim & Dive</h3>
+              <p>Dari pemula hingga kompetitif. Instruktur bersertifikat dengan rasio 1:6 untuk keselamatan optimal.</p>
+              <div class="program-card-footer">
+                <span class="program-age">👶 Usia 4–17 Tahun</span>
+                <button class="btn btn-primary btn-sm btn-enroll" data-program="Swim & Dive">Daftar</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US SECTION -->
+    <section style="padding: var(--space-xl) 0;" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Mengapa KidsPlay?</span>
+          <h2 id="why-title">Lebih dari Sekadar Olahraga</h2>
+          <p>Kami membangun fondasi karakter anak melalui olahraga yang terstruktur dan menyenangkan.</p>
+        </div>
+
+        <div class="grid grid-3 gap-md" style="gap: var(--space-md);">
+          <div class="sport-card" style="text-align:left; flex-direction: row; align-items: flex-start; gap: 16px;">
+            <span class="emoji" style="font-size:40px;">🛡️</span>
+            <div>
+              <div class="label" style="font-size:17px; margin-bottom:6px;">Keamanan Prioritas</div>
+              <div class="sublabel" style="font-size:14px; line-height:1.6; color:var(--on-surface-variant);">Fasilitas modern dengan protokol keselamatan ketat dan pelatih bersertifikat nasional.</div>
+            </div>
+          </div>
+          <div class="sport-card" style="text-align:left; flex-direction: row; align-items: flex-start; gap: 16px;">
+            <span class="emoji" style="font-size:40px;">🏆</span>
+            <div>
+              <div class="label" style="font-size:17px; margin-bottom:6px;">Prestasi Terbukti</div>
+              <div class="sublabel" style="font-size:14px; line-height:1.6; color:var(--on-surface-variant);">Alumni kami telah meraih 50+ medali di kompetisi tingkat kota, provinsi, dan nasional.</div>
+            </div>
+          </div>
+          <div class="sport-card" style="text-align:left; flex-direction: row; align-items: flex-start; gap: 16px;">
+            <span class="emoji" style="font-size:40px;">❤️</span>
+            <div>
+              <div class="label" style="font-size:17px; margin-bottom:6px;">Lingkungan Inklusif</div>
+              <div class="sublabel" style="font-size:14px; line-height:1.6; color:var(--on-surface-variant);">Semua anak diterima, tanpa memandang kemampuan awal. Belajar bersama, tumbuh bersama.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2 id="cta-title">Siap Bergabung?</h2>
+            <p>Daftarkan anak Anda sekarang dan dapatkan sesi percobaan gratis untuk semua program!</p>
+          </div>
+          <a href="kontak.html" class="btn btn-primary">🎯 Daftar Gratis</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================
+       FOOTER (HTML5 Semantic)
+  ====================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="logo">Kids<span>Play</span> Sports Club</div>
+          <p>Membentuk generasi atlet muda yang berkarakter, berprestasi, dan mencintai olahraga sejak dini.</p>
+          <div style="margin-top: 16px; display:flex; gap:12px;">
+            <span style="font-size:24px; cursor:pointer; opacity:0.7;" title="Instagram">📸</span>
+            <span style="font-size:24px; cursor:pointer; opacity:0.7;" title="Facebook">👍</span>
+            <span style="font-size:24px; cursor:pointer; opacity:0.7;" title="WhatsApp">💬</span>
+            <span style="font-size:24px; cursor:pointer; opacity:0.7;" title="YouTube">▶️</span>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-col">
+          <h4>Program</h4>
+          <ul>
+            <li><a href="program.html">Football Academy</a></li>
+            <li><a href="program.html">Basketball Stars</a></li>
+            <li><a href="program.html">Tennis Champions</a></li>
+            <li><a href="program.html">Swim & Dive</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Informasi</h4>
+          <ul>
+            <li><a href="jadwal.html">Jadwal Latihan</a></li>
+            <li><a href="galeri.html">Galeri Kegiatan</a></li>
+            <li><a href="kontak.html">Pendaftaran</a></li>
+            <li><a href="kontak.html">Kontak Kami</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul>
+            <li><a href="#">📍 Jl. Olahraga No.12, Jakarta</a></li>
+            <li><a href="tel:02112345678">📞 (021) 1234-5678</a></li>
+            <li><a href="mailto:info@kidsplay.id">✉️ info@kidsplay.id</a></li>
+            <li><a href="#">🕐 Sen–Sab 07.00–19.00</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+       <center> <span>Dibuat Oleh Aan arip suryana |NIM:24131417079</span></center>
+        <span>
+          <a href="#">Kebijakan Privasi</a> · <a href="#">Syarat &amp; Ketentuan</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- ======================================================
+       BADGE IDENTITAS MAHASISWA
+  ====================================================== -->
+  <div id="student-badge" style="
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 14px 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.08);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    min-width: 230px;
+    max-width: 280px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.12);
+    animation: badgeSlideIn 0.6s cubic-bezier(0.34,1.56,0.64,1) both;
+  ">
+    <div style="
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    ">
+      <div style="
+        width: 36px; height: 36px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #f7971e, #ffd200);
+        display: flex; align-items: center; justify-content: center;
+        font-size: 18px;
+        flex-shrink: 0;
+        box-shadow: 0 2px 8px rgba(247,151,30,0.4);
+      ">🎓</div>
+      <div>
+        <div style="font-size: 9px; text-transform: uppercase; letter-spacing: 1.5px; color: #ffd200; font-weight: 700; margin-bottom: 1px;">Tema 1 · Jasa Kursus</div>
+        <div style="font-size: 11px; color: rgba(255,255,255,0.5); font-weight: 400;">Tugas Web Design</div>
+      </div>
+    </div>
+    <div style="margin-bottom: 4px;">
+      <div style="font-size: 10px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2px;">Nama</div>
+      <div style="font-size: 13px; font-weight: 700; color: #ffffff; letter-spacing: 0.3px;">AAN ARIP SURYANA</div>
+    </div>
+    <div>
+      <div style="font-size: 10px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2px;">NIM</div>
+      <div style="font-size: 13px; font-weight: 600; color: #ffd200; font-family: 'Courier New', monospace; letter-spacing: 1px;">2431417079</div>
+    </div>
+    <!-- Tombol tutup -->
+    <button onclick="document.getElementById('student-badge').style.display='none'" style="
+      position: absolute;
+      top: 8px; right: 10px;
+      background: rgba(255,255,255,0.1);
+      border: none;
+      color: rgba(255,255,255,0.5);
+      cursor: pointer;
+      font-size: 13px;
+      line-height: 1;
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      padding: 0;
+      transition: background 0.2s;
+    " onmouseover="this.style.background='rgba(255,255,255,0.2)'"
+       onmouseout="this.style.background='rgba(255,255,255,0.1)'"
+       title="Tutup">✕</button>
+  </div>
+
+  <style>
+    @keyframes badgeSlideIn {
+      from { opacity: 0; transform: translateY(30px) scale(0.9); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+  </style>
+
+</body>
+</html>

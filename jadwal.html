@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jadwal Latihan | KidsPlay Sports Club</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <header>
+    <nav aria-label="Navigasi Utama">
+      <a href="index.html" class="nav-logo">Kids<span>Play</span> ⚡</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="program.html">Program Olahraga</a></li>
+        <li><a href="jadwal.html" class="active">Jadwal Latihan</a></li>
+        <li><a href="galeri.html">Galeri Kegiatan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+      <a href="kontak.html" class="btn btn-primary nav-btn-header">Daftar Sekarang</a>
+      <button class="nav-hamburger" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <nav class="nav-mobile" aria-label="Navigasi Mobile">
+      <a href="index.html">🏠 Beranda</a>
+      <a href="program.html">🏅 Program Olahraga</a>
+      <a href="jadwal.html">📅 Jadwal Latihan</a>
+      <a href="galeri.html">📸 Galeri Kegiatan</a>
+      <a href="kontak.html">📞 Kontak</a>
+      <a href="kontak.html" class="btn btn-primary" style="margin-top:8px; text-align:center;">Daftar Sekarang</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="schedule-section" aria-labelledby="jadwal-title">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="tag">Jadwal Mingguan</span>
+          <h1 id="jadwal-title" class="text-headline-xl" style="color:var(--on-background); margin-bottom:12px;">Jadwal Latihan</h1>
+          <p>Pilih waktu yang sesuai untuk anak Anda. Semua sesi berdurasi 90 menit dipandu pelatih berpengalaman.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="schedule-filters" role="group" aria-label="Filter berdasarkan olahraga">
+          <button class="filter-btn active" data-filter="all">🏅 Semua Olahraga</button>
+          <button class="filter-btn" data-filter="soccer">⚽ Sepak Bola</button>
+          <button class="filter-btn" data-filter="basket">🏀 Bola Basket</button>
+          <button class="filter-btn" data-filter="tennis">🎾 Tenis</button>
+          <button class="filter-btn" data-filter="swim">🏊 Renang</button>
+        </div>
+
+        <!-- Schedule Table -->
+        <div class="schedule-table-wrap">
+          <table class="schedule-table" role="table" aria-label="Jadwal latihan mingguan">
+            <thead>
+              <tr>
+                <th scope="col">⏰ Waktu</th>
+                <th scope="col">Senin</th>
+                <th scope="col">Selasa</th>
+                <th scope="col">Rabu</th>
+                <th scope="col">Kamis</th>
+                <th scope="col">Jumat</th>
+                <th scope="col">Sabtu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-sport="soccer">
+                <td class="time-col">07:00 – 08:30</td>
+                <td><span class="schedule-pill pill-soccer">⚽ Sepak Bola Minis<br><small>Usia 4–6 · Lap. A</small></span></td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-soccer">⚽ Sepak Bola Minis<br><small>Usia 4–6 · Lap. A</small></span></td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-soccer">⚽ Sepak Bola Minis<br><small>Usia 4–6 · Lap. A</small></span></td>
+                <td>–</td>
+              </tr>
+              <tr data-sport="swim">
+                <td class="time-col">08:00 – 09:30</td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-swim">🏊 Renang Pemula<br><small>Usia 4–7 · Kolam</small></span></td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-swim">🏊 Renang Pemula<br><small>Usia 4–7 · Kolam</small></span></td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-swim">🏊 Renang Pemula<br><small>Usia 4–7 · Kolam</small></span></td>
+              </tr>
+              <tr data-sport="tennis">
+                <td class="time-col">09:00 – 10:30</td>
+                <td><span class="schedule-pill pill-tennis">🎾 Tenis Dasar<br><small>Usia 6–10 · Lapangan 1</small></span></td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-tennis">🎾 Tenis Dasar<br><small>Usia 6–10 · Lapangan 1</small></span></td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-tennis">🎾 Tenis Dasar<br><small>Usia 6–10 · Lapangan 1</small></span></td>
+                <td>–</td>
+              </tr>
+              <tr data-sport="basket">
+                <td class="time-col">10:00 – 11:30</td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-basket">🏀 Basket Junior<br><small>Usia 8–12 · Hall A</small></span></td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-basket">🏀 Basket Junior<br><small>Usia 8–12 · Hall A</small></span></td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-basket">🏀 Basket Junior<br><small>Usia 8–12 · Hall A</small></span></td>
+              </tr>
+              <tr data-sport="soccer">
+                <td class="time-col">15:00 – 16:30</td>
+                <td><span class="schedule-pill pill-soccer">⚽ Football Academy<br><small>Usia 10–14 · Lap. B</small></span></td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-soccer">⚽ Football Academy<br><small>Usia 10–14 · Lap. B</small></span></td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-soccer">⚽ Football Academy<br><small>Usia 10–14 · Lap. B</small></span></td>
+                <td><span class="schedule-pill pill-soccer">⚽ Pertandingan<br><small>Internal · Lap. A&B</small></span></td>
+              </tr>
+              <tr data-sport="swim">
+                <td class="time-col">15:30 – 17:00</td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-swim">🏊 Renang Lanjutan<br><small>Usia 10–17 · Kolam</small></span></td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-swim">🏊 Renang Lanjutan<br><small>Usia 10–17 · Kolam</small></span></td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-swim">🏊 Renang Lanjutan<br><small>Usia 10–17 · Kolam</small></span></td>
+              </tr>
+              <tr data-sport="basket">
+                <td class="time-col">16:00 – 17:30</td>
+                <td><span class="schedule-pill pill-basket">🏀 Basket Senior<br><small>Usia 13–17 · Hall B</small></span></td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-basket">🏀 Basket Senior<br><small>Usia 13–17 · Hall B</small></span></td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-basket">🏀 Basket Senior<br><small>Usia 13–17 · Hall B</small></span></td>
+                <td>–</td>
+              </tr>
+              <tr data-sport="tennis">
+                <td class="time-col">17:00 – 18:30</td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-tennis">🎾 Tenis Lanjutan<br><small>Usia 12–17 · Lap. 2</small></span></td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-tennis">🎾 Tenis Lanjutan<br><small>Usia 12–17 · Lap. 2</small></span></td>
+                <td>–</td>
+                <td><span class="schedule-pill pill-tennis">🎾 Turnamen Mini<br><small>Semua usia · Lap. 1&2</small></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Legend -->
+        <div class="flex flex-wrap gap-sm" style="margin-top: var(--space-md);" aria-label="Keterangan warna jadwal">
+          <span class="schedule-pill pill-soccer">⚽ Sepak Bola</span>
+          <span class="schedule-pill pill-basket">🏀 Bola Basket</span>
+          <span class="schedule-pill pill-tennis">🎾 Tenis</span>
+          <span class="schedule-pill pill-swim">🏊 Renang</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2>Ingin Coba Sesi Latihan?</h2>
+            <p>Daftarkan anak Anda untuk sesi percobaan gratis. Tidak ada komitmen, 100% gratis!</p>
+          </div>
+          <a href="kontak.html" class="btn btn-primary">📝 Daftar Sekarang</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">Kids<span>Play</span> Sports Club</div>
+          <p>Membentuk generasi atlet muda yang berkarakter dan berprestasi.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Program</h4>
+          <ul>
+            <li><a href="program.html">Football Academy</a></li>
+            <li><a href="program.html">Basketball Stars</a></li>
+            <li><a href="program.html">Tennis Champions</a></li>
+            <li><a href="program.html">Swim & Dive</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="jadwal.html">Jadwal Latihan</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul>
+            <li><a href="#">📍 Jl. Olahraga No.12, Jakarta</a></li>
+            <li><a href="tel:02112345678">📞 (021) 1234-5678</a></li>
+            <li><a href="mailto:info@kidsplay.id">✉️ info@kidsplay.id</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Dibuat Oleh Aan arip suryana |NIM:24131417079</span>
+        <span><a href="#">Kebijakan Privasi</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

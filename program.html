@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Olahraga | KidsPlay Sports Club</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="toast-container"></div>
+
+  <header>
+    <nav aria-label="Navigasi Utama">
+      <a href="index.html" class="nav-logo">Kids<span>Play</span> ⚡</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="program.html" class="active">Program Olahraga</a></li>
+        <li><a href="jadwal.html">Jadwal Latihan</a></li>
+        <li><a href="galeri.html">Galeri Kegiatan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+      <a href="kontak.html" class="btn btn-primary nav-btn-header">Daftar Sekarang</a>
+      <button class="nav-hamburger" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <nav class="nav-mobile" aria-label="Navigasi Mobile">
+      <a href="index.html">🏠 Beranda</a>
+      <a href="program.html">🏅 Program Olahraga</a>
+      <a href="jadwal.html">📅 Jadwal Latihan</a>
+      <a href="galeri.html">📸 Galeri Kegiatan</a>
+      <a href="kontak.html">📞 Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Programs Section -->
+    <section style="padding: var(--space-xl) 0;" aria-labelledby="programs-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="tag">Program Unggulan</span>
+          <h1 id="programs-heading" class="text-headline-xl" style="color:var(--on-background); margin-bottom:12px;">Program Olahraga</h1>
+          <p>Empat cabang olahraga pilihan yang dirancang untuk mengembangkan potensi terbaik setiap anak, dari pemula hingga kompetitif.</p>
+        </div>
+
+        <!-- Football -->
+        <article style="background:var(--surface-container-lowest); border-radius:var(--radius-lg); padding:var(--space-lg); margin-bottom:var(--space-md); box-shadow:var(--shadow-card); border:1px solid var(--outline-variant);" aria-labelledby="football-title">
+          <div class="flex items-center gap-md" style="margin-bottom:var(--space-md);">
+            <div style="font-size:64px;">⚽</div>
+            <div>
+              <span class="program-card-chip chip-soccer">Sepak Bola</span>
+              <h2 id="football-title" style="font-size:28px; font-weight:700; margin-top:8px;">Football Academy</h2>
+              <p style="color:var(--on-surface-variant); margin-top:4px;">Program sepak bola komprehensif untuk anak usia 6–17 tahun</p>
+            </div>
+          </div>
+          <div class="grid grid-3 gap-md" style="margin-bottom:var(--space-md);">
+            <div style="background:var(--tertiary-fixed); border-radius:var(--radius-md); padding:16px;">
+              <div style="font-weight:700; font-family:var(--font-headline); margin-bottom:4px;">👶 Minis (Usia 6–9)</div>
+              <div style="font-size:13px; color:var(--on-surface-variant); line-height:1.6;">Teknik dasar, koordinasi bola, dan kesenangan bermain tim. 2x seminggu, 60 menit.</div>
+            </div>
+            <div style="background:var(--primary-fixed); border-radius:var(--radius-md); padding:16px;">
+              <div style="font-weight:700; font-family:var(--font-headline); margin-bottom:4px;">👦 Junior (Usia 10–13)</div>
+              <div style="font-size:13px; color:var(--on-surface-variant); line-height:1.6;">Passing, shooting, taktik dasar, dan pertandingan internal. 3x seminggu, 90 menit.</div>
+            </div>
+            <div style="background:var(--secondary-fixed); border-radius:var(--radius-md); padding:16px;">
+              <div style="font-weight:700; font-family:var(--font-headline); margin-bottom:4px;">🏃 Senior (Usia 14–17)</div>
+              <div style="font-size:13px; color:var(--on-surface-variant); line-height:1.6;">Strategi tim, fisik intensif, dan kompetisi antar klub. 4x seminggu, 120 menit.</div>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-enroll" data-program="Football Academy" onclick="window.location.href='kontak.html'">
+            Daftar Football Academy
+          </button>
+        </article>
+
+        <!-- Basketball -->
+        <article style="background:var(--surface-container-lowest); border-radius:var(--radius-lg); padding:var(--space-lg); margin-bottom:var(--space-md); box-shadow:var(--shadow-card); border:1px solid var(--outline-variant);" aria-labelledby="basket-title">
+          <div class="flex items-center gap-md" style="margin-bottom:var(--space-md);">
+            <div style="font-size:64px;">🏀</div>
+            <div>
+              <span class="program-card-chip chip-basket">Bola Basket</span>
+              <h2 id="basket-title" style="font-size:28px; font-weight:700; margin-top:8px;">Basketball Stars</h2>
+              <p style="color:var(--on-surface-variant); margin-top:4px;">Pengembangan skill bola basket untuk usia 8–17 tahun</p>
+            </div>
+          </div>
+          <div class="grid grid-3 gap-md" style="margin-bottom:var(--space-md);">
+            <div style="background:var(--secondary-fixed); border-radius:var(--radius-md); padding:16px;">
+              <div style="font-weight:700; font-family:var(--font-headline); margin-bottom:4px;">🌱 Pemula (Usia 8–11)</div>
+              <div style="font-size:13px; color:var(--on-surface-variant); line-height:1.6;">Dribbling dasar, chest pass, lay-up. Fokus pada koordinasi dan kesenangan. 2x/minggu.</div>
+            </div>
+            <div style="background:var(--primary-fixed); border-radius:var(--radius-md); padding:16px;">
+              <div style="font-weight:700; font-family:var(--font-headline); margin-bottom:4px;">⚡ Menengah (Usia 12–14)</div>
+              <div style="font-size:13px; color:var(--on-surface-variant); line-height:1.6;">Jump shot, pick & roll, zone defense. Scrimmage mingguan. 3x/minggu.</div>
+            </div>
+            <div style="background:var(--tertiary-fixed); border-radius:var(--radius-md); padding:16px;">
+              <div style="font-weight:700; font-family:var(--font-headline); margin-bottom:4px;">🏆 Lanjutan (Usia 15–17)</div>
+              <div style="font-size:13px; color:var(--on-surface-variant); line-height:1.6;">Analisis video, strength training, turnamen antar sekolah. 4x/minggu.</div>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-enroll" data-program="Basketball Stars" onclick="window.location.href='kontak.html'">
+            Daftar Basketball Stars
+          </button>
+        </article>
+
+        <!-- Tennis -->
+        <article style="background:var(--surface-container-lowest); border-radius:var(--radius-lg); padding:var(--space-lg); margin-bottom:var(--space-md); box-shadow:var(--shadow-card); border:1px solid var(--outline-variant);" aria-labelledby="tennis-title">
+          <div class="flex items-center gap-md" style="margin-bottom:var(--space-md);">
+            <div style="font-size:64px;">🎾</div>
+            <div>
+              <span class="program-card-chip chip-tennis">Tenis</span>
+              <h2 id="tennis-title" style="font-size:28px; font-weight:700; margin-top:8px;">Tennis Champions</h2>
+              <p style="color:var(--on-surface-variant); margin-top:4px;">Teknik tenis modern untuk anak berbakat usia 6–17 tahun</p>
+            </div>
+          </div>
+          <div class="grid grid-3 gap-md" style="margin-bottom:var(--space-md);">
+            <div style="background:var(--primary-fixed); border-radius:var(--radius-md); padding:16px;">
+              <div style="font-weight:700; font-family:var(--font-headline); margin-bottom:4px;">🌟 Dasar (Usia 6–9)</div>
+              <div style="font-size:13px; color:var(--on-surface-variant); line-height:1.6;">Memegang raket, forehand, backhand, dan footwork dasar. Mini ball & short court.</div>
+            </div>
+            <div style="background:var(--tertiary-fixed); border-radius:var(--radius-md); padding:16px;">
+              <div style="font-weight:700; font-family:var(--font-headline); margin-bottom:4px;">🎯 Menengah (Usia 10–13)</div>
+              <div style="font-size:13px; color:var(--on-surface-variant); line-height:1.6;">Servis, volley, strategi permainan. Rally drills dan set pendek.</div>
+            </div>
+            <div style="background:var(--secondary-fixed); border-radius:var(--radius-md); padding:16px;">
+              <div style="font-weight:700; font-family:var(--font-headline); margin-bottom:4px;">🏅 Kompetitif (Usia 14–17)</div>
+              <div style="font-size:13px; color:var(--on-surface-variant); line-height:1.6;">Persiapan turnamen, mental coaching, fisik spesifik tenis.</div>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-enroll" data-program="Tennis Champions" onclick="window.location.href='kontak.html'">
+            Daftar Tennis Champions
+          </button>
+        </article>
+
+        <!-- Swimming -->
+        <article style="background:var(--surface-container-lowest); border-radius:var(--radius-lg); padding:var(--space-lg); box-shadow:var(--shadow-card); border:1px solid var(--outline-variant);" aria-labelledby="swim-title">
+          <div class="flex items-center gap-md" style="margin-bottom:var(--space-md);">
+            <div style="font-size:64px;">🏊</div>
+            <div>
+              <span class="program-card-chip chip-swim">Renang</span>
+              <h2 id="swim-title" style="font-size:28px; font-weight:700; margin-top:8px;">Swim & Dive</h2>
+              <p style="color:var(--on-surface-variant); margin-top:4px;">Program renang aman dan menyenangkan untuk usia 4–17 tahun</p>
+            </div>
+          </div>
+          <div class="grid grid-3 gap-md" style="margin-bottom:var(--space-md);">
+            <div style="background:#e0f2fe; border-radius:var(--radius-md); padding:16px;">
+              <div style="font-weight:700; font-family:var(--font-headline); margin-bottom:4px;">🐠 Tadpole (Usia 4–6)</div>
+              <div style="font-size:13px; color:var(--on-surface-variant); line-height:1.6;">Pengenalan air, percaya diri di kolam, gerakan tangan dan kaki dasar. Rasio 1:4.</div>
+            </div>
+            <div style="background:#bfdbfe; border-radius:var(--radius-md); padding:16px;">
+              <div style="font-weight:700; font-family:var(--font-headline); margin-bottom:4px;">🐬 Dolphin (Usia 7–12)</div>
+              <div style="font-size:13px; color:var(--on-surface-variant); line-height:1.6;">Gaya bebas, dada, dan punggung. Latihan ketahanan dan teknik pernapasan.</div>
+            </div>
+            <div style="background:#93c5fd; border-radius:var(--radius-md); padding:16px;">
+              <div style="font-weight:700; font-family:var(--font-headline); margin-bottom:4px;">🦈 Shark (Usia 13–17)</div>
+              <div style="font-size:13px; color:var(--on-surface-variant); line-height:1.6;">Gaya kupu-kupu, start & turn, program latihan kompetitif. Persiapan kejuaraan.</div>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-enroll" data-program="Swim & Dive" onclick="window.location.href='kontak.html'">
+            Daftar Swim & Dive
+          </button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2>Masih Bingung Pilih Program?</h2>
+            <p>Hubungi kami dan konsultasikan program terbaik sesuai minat dan kemampuan anak Anda.</p>
+          </div>
+          <a href="kontak.html" class="btn btn-primary">💬 Konsultasi Gratis</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">Kids<span>Play</span> Sports Club</div>
+          <p>Membentuk generasi atlet muda yang berkarakter dan berprestasi.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Program</h4>
+          <ul>
+            <li><a href="program.html">Football Academy</a></li>
+            <li><a href="program.html">Basketball Stars</a></li>
+            <li><a href="program.html">Tennis Champions</a></li>
+            <li><a href="program.html">Swim & Dive</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="jadwal.html">Jadwal Latihan</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul>
+            <li><a href="#">📍 Jl. Olahraga No.12, Jakarta</a></li>
+            <li><a href="tel:02112345678">📞 (021) 1234-5678</a></li>
+            <li><a href="mailto:info@kidsplay.id">✉️ info@kidsplay.id</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Dibuat Oleh Aan arip suryana |NIM:24131417079</span>
+        <span><a href="#">Kebijakan Privasi</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
